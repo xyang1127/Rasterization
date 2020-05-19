@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rasterization</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  <script type="text/javascript" src="gl-matrix-min.js"></script>
+  <script type="text/javascript" src="rasterize.js"></script>
+</head>
+
+<body onload="main();">
+
+  <div class="container">
+
+    <h1>Rasterization</h1>
+
+    <canvas id="myWebGLCanvas" width="512" height="512"></canvas>
+
+    <h2>interactively change view</h2>
+    <p>Use the following key to action table to enable the user to change the view: </p>
+    <ul>
+      <li>a and d — translate view left and right along view X</li>
+      <li>w and s — translate view forward and backward along view Z</li>
+      <li>q and e — translate view up and down along view Y</li>
+      <li>A and D — rotate view left and right around view Y (yaw)</li>
+      <li>W and S — rotate view forward and backward around view X (pitch)</li>
+    </ul>
+
+    <h2>Interactively select a model</h2>
+    <p>Use the following key to action table to interactively select a certain model: </p>
+    <ul>
+      <li>left and right — select and highlight the next/previous triangle set (previous off)</li>
+      <li>space — deselect and turn off highlight</li>
+    </ul>
+
+    <h2>Interactively change projection of a model</h2>
+    <p>Use the following key to action table to interactively change projection on the selected model:</p>
+    <ul>
+      <li>< — use perspective projection (the default)</li>
+      <li>= — use parallel projection</li>
+    </ul>
+
+    <h2>Interactively transform models</h2>
+    <p>Use the following key to action table to interactively transform the selected model: </p>
+    <ul>
+      <li>k and ; — translate selection left and right along view X</li>
+      <li>o and l — translate selection forward and backward along view Z</li>
+      <li>i and p — translate selection up and down along view Y</li>
+      <li>K and ; — rotate selection left and right around view Y (yaw)</li>
+      <li>O and L — rotate selection forward and backward around view X (pitch)</li>
+      <li>I and P — rotate selection clockwise and counterclockwise around view Z (roll)</li>
+    </ul>
+
+  </div>
+
+</body>
+
+<footer>
+  have fun!
+</footer>
+
+</html>
