@@ -1,3 +1,3 @@
-# prog3
+# Rasterization using WebGL
 
-helper files for the intro cg class's third programming assignment
+[play here](https://xyang1127.github.io/Rasterization/)
